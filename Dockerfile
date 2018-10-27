@@ -4,7 +4,7 @@ RUN apk update && \
         apk add --no-cache \
         gcc \
         g++ \
-        musl-dev \
+        musl-dev
 
 RUN pip install locustio
 
