@@ -47,4 +47,4 @@ COPY ./locustfile.py .
 CMD ["locust","--host=http://localhost"]
 
 # you can use it with:
-# docker run -it -p 8089:8089 paterit/locustio
+# docker run -it -p 8089:8089 paterit/locustio-alpine
