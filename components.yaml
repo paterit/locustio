@@ -1,0 +1,9 @@
+python:
+  component-type: docker-image
+  current-version: 3.6.6-alpine3.8
+  docker-repo: library
+  filter: /^\d+\.\d+\.\d+-alpine\d+\.\d+$/
+  files: [Dockerfile]
+  version-pattern: "PYTHON_VERSION={version}"
+
+
