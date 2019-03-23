@@ -5,5 +5,15 @@ python:
   filter: /^\d+\.\d+\.\d+-alpine\d+\.\d+$/
   files: [Dockerfile]
   version-pattern: "PYTHON_VERSION={version}"
+locustio:
+  component-type: pypi
+  current-version: 0.9.0
+  files: [requirements.txt]
+  filter: /^\d+\.\d+\.\d+$/
+pyzmq:
+  component-type: pypi
+  current-version: 16.0.4
+  files: [requirements.txt]
+  filter: /^\d+\.\d+\.\d+$/
 
 

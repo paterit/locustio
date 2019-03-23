@@ -13,8 +13,11 @@ RUN apk update && \
 
 # build wheels instead of installing
 WORKDIR /wheels
+
+COPY requirements.txt .
+
 RUN pip install -U pip && \
-    pip wheel locustio pyzmq
+    pip wheel -r requirements.txt
 
 
 FROM python:${PYTHON_VERSION}
@@ -30,9 +33,11 @@ RUN apk update && \
 # copy built previously wheels archives
 COPY --from=builder /wheels /wheels
 
+COPY requirements.txt /wheels/requirements.txt
+
 # use archives from /weels dir
 RUN pip install -U pip \
-       && pip install locustio -f /wheels \
+       && pip install -r /wheels/requirements.txt -f /wheels \
        && rm -rf /wheels \
        && rm -rf /root/.cache/pip/*
 
