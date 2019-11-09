@@ -7,7 +7,7 @@ locustio:
   next-version: 0.12.2
 python:
   component-type: docker-image
-  current-version: 3.7.3-alpine3.10
+  current-version: 3.7.5-alpine3.10
   docker-repo: library
   exclude-versions:
   - 3.8.0-alpine3.10
