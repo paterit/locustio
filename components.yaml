@@ -21,3 +21,4 @@ pyzmq:
   - requirements.txt
   filter: /^\d+\.\d+\.\d+$/
   next-version: 18.0.2
+  exclude-versions: [18.1.0]
