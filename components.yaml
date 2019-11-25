@@ -1,10 +1,10 @@
 locustio:
   component-type: pypi
-  current-version: 0.12.2
+  current-version: 0.13.2
   files:
   - requirements.txt
   filter: /^\d+\.\d+\.\d+$/
-  next-version: 0.12.2
+  next-version: 0.13.2
 python:
   component-type: docker-image
   current-version: 3.7.5-alpine3.10
@@ -22,4 +22,4 @@ pyzmq:
   files:
   - requirements.txt
   filter: /^\d+\.\d+\.\d+$/
-  next-version: 18.1.0
+  next-version: 18.1.1
