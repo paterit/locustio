@@ -11,7 +11,8 @@ RUN apk update && \
         g++ \
         musl-dev \
         linux-headers \
-        zeromq-dev
+        zeromq-dev \
+        libffi-dev
 
 # build wheels instead of installing
 WORKDIR /wheels
