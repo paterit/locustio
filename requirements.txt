@@ -1,2 +1,2 @@
 locustio==0.13.2
-pyzmq==18.1.0
+pyzmq==18.1.1
