@@ -1,4 +1,4 @@
-ARG PYTHON_VERSION=3.7.5-alpine3.10
+ARG PYTHON_VERSION=3.9.0-alpine3.12
 
 FROM python:${PYTHON_VERSION} as builder
 
@@ -12,7 +12,8 @@ RUN apk update && \
         musl-dev \
         linux-headers \
         zeromq-dev \
-        libffi-dev
+        libffi-dev \
+        make
 
 # build wheels instead of installing
 WORKDIR /wheels
