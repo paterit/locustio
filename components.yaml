@@ -7,14 +7,15 @@ locustio:
   next-version: 0.14.6
 python:
   component-type: docker-image
-  current-version: 3.9.0-alpine3.12
+  current-version: 3.8.6-alpine3.12
   docker-repo: library
   exclude-versions:
   - 3.8.0-alpine3.10
+  - 3.9.0-alpine3.12
   files:
   - Dockerfile
   filter: /^\d+\.\d+\.\d+-alpine\d+\.\d+$/
-  next-version: 3.9.0-alpine3.12
+  next-version: 3.8.6-alpine3.12
   version-pattern: PYTHON_VERSION={version}
 pyzmq:
   component-type: pypi
