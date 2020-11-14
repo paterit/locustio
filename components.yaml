@@ -19,7 +19,7 @@ python:
   version-pattern: PYTHON_VERSION={version}
 pyzmq:
   component-type: pypi
-  current-version: 19.0.2
+  current-version: 20.0.0
   files:
   - requirements.txt
   filter: /^\d+\.\d+\.\d+$/
