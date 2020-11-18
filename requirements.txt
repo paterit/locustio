@@ -1,2 +1,2 @@
-locust==1.4.0
+locust==1.4.1
 pyzmq==20.0.0

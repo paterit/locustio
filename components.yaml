@@ -1,10 +1,10 @@
 locust:
   component-type: pypi
-  current-version: 1.4.0
+  current-version: 1.4.1
   files:
   - requirements.txt
   filter: /^\d+\.\d+\.\d+$/
-  next-version: 1.4.0
+  next-version: 1.4.1
 python:
   component-type: docker-image
   current-version: 3.8.6-alpine3.12
